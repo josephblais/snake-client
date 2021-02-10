@@ -16,18 +16,20 @@ const handleUserInput = function(keypress) {
   }
   if (keypress === "w") {
     connection.write('Move: up');
-    console.log('Move: up');
   }
   if (keypress === "a") {
     connection.write('Move: left');
-    console.log('left');
   }
   if (keypress === "s") {
     connection.write('Move: down');
-    console.log('down');
   } if (keypress === "d") {
     connection.write('Move: right');
-    console.log('right');
+  } if (keypress === "j") {
+    connection.write('Say: AAAAAAAAAAAAAA');
+  } if (keypress === "k") {
+    connection.write('Say: SNEK');
+  } if (keypress === "l") {
+    connection.write('Say: BLBLBLBLBL');
   }
 };
 
